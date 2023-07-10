@@ -14,29 +14,29 @@ import Files from "./pages/Files";
 import Host from "./pages/Host";
 
 const App = () => {
-    return (
-        <>
-            <Header />
-            <Container
-                style={{
-                    maxWidth: "min(95%, 1296px)",
-                    marginInline: "auto",
-                    padding: 0,
-                }}
-            >
-                <Routes>
-                    <Route path="/" element={<Clikkle />} />
-                    <Route path="/campaigns" element={<Campaigns />} />
-                    <Route path="/ads" element={<Ads />} />
-                    <Route path="/cmail" element={<Cmail />} />
-                    <Route path="/esign" element={<Esign />} />
-                    <Route path="/files" element={<Files />} />
-                    <Route path="/host" element={<Host />} />
-                </Routes>
-            </Container>
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Container
+        style={{
+          maxWidth: "min(95%, 1296px)",
+          marginInline: "auto",
+          padding: 0,
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Clikkle />} />
+          <Route path="/campaigns" element={<Campaigns />} />
+          <Route path="/ads" element={<Ads />} />
+          <Route path="/cmail" element={<Cmail />} />
+          <Route path="/esign" element={<Esign />} />
+          <Route path="/files" element={<Files />} />
+          <Route path="/host" element={<Host />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </>
+  );
 };
 
 export default App;
